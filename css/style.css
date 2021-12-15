@@ -1,0 +1,1124 @@
+
+   :root{
+  --nvoip_callmecolorButton: #f37435; 
+  --nvoip_callmePulseColorButton: rgba(243, 116, 53, 0.5);
+
+  --nvoip_callmeColorDisabledButton: #4d4d4d;
+  --nvoip_callmeColorEnabledButton: #f37435;
+
+  --nvoip_callmeColorCallButton: #f37435;
+  --nvoip_callmeColorMainTextCall: #6d2d4a;
+
+  --nvoip_callmeColorSmsButton: #f37435;
+  --nvoip_callmeColorMainTextSms: #6d2d4a;
+
+  --nvoip_callmeColorInputFocus: #f37435;
+
+  --nvoip_callmeColorCloseButton: #f37435;
+  --nvoip_callmeColorHoverCloseButton: #ff6416;
+
+  --nvoip_callmeColorHoverAllButtons: #fe702a;
+  --nvoip_callmeColorHoverHrefFooter: #d65615;
+  --nvoip_callmeColorHrefFooter: #f37435;
+
+  --nvoip_callmeColorScrollBarTA: #f37435;
+  --nvoip_callmeColorBgScrollBarTA: rgb(236, 235, 235);
+
+  --nvoip_callmeSuccessPageColorMainText: #6d2d4a;
+  --nvoip_callmeSuccessPageColorTitle: #f37435;
+  
+  --nvoip_callmeColorLoading: #6d2d4a;
+  --nvoip_callmeColorTextLoading: #6d2d4a;
+
+  --nvoip_callmeColorTitleFailed: #f37435;
+  --nvoip_callmeColorMainTextFailed: #6d2d4a;
+
+  --nvoip_callmeColorTitleMessage: #f37435;
+  --nvoip_callmeColorMainTextMessage: #6d2d4a;
+
+  --nvoip_callmeReturnButton: #f37435;
+  --nvoip_callmeReturnButtonHover: #f37435;
+
+
+}
+
+
+/* ANIMAÇÕES */
+/* Animação do widget */
+@-webkit-keyframes nvoip_callme_slideIn {
+  0% {
+    transform: translateX(300px);
+  }
+  35% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  45% {
+    transform: translateX(0);
+  }
+  47% {
+    transform: translateX(3px);
+  }
+  49% {
+    transform: translateX(2px);
+  }
+  51% {
+    transform: translateX(1px);
+  }
+  53% {
+    transform: translateX(0px);
+  }
+}
+
+@-moz-keyframes nvoip_callme_slideIn {
+  0% {
+    transform: translateX(300px);
+  }
+  35% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  45% {
+    transform: translateX(0);
+  }
+  47% {
+    transform: translateX(3px);
+  }
+  49% {
+    transform: translateX(2px);
+  }
+  51% {
+    transform: translateX(1px);
+  }
+  53% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes nvoip_callme_slideIn {
+  0% {
+    transform: translateX(300px);
+  }
+  35% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  45% {
+    transform: translateX(0);
+  }
+  47% {
+    transform: translateX(3px);
+  }
+  49% {
+    transform: translateX(2px);
+  }
+  51% {
+    transform: translateX(1px);
+  }
+  53% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes nvoip_callme_pulse-nvoip {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 var(--nvoip_callmePulseColorButton)
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 30px rgba(243, 116, 53, 0);
+  }
+}
+
+@keyframes nvoip_callme_ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+
+@-webkit-keyframes nvoip_callme_ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+
+.nvoip_callme_right-to-left {
+  -webkit-animation: nvoip_callme_slideIn 2s forwards;
+  -moz-animation: nvoip_callme_slideIn 2s forwards;
+  animation: nvoip_callme_slideIn 2s forwards;
+}
+
+
+/* ESTILOS GERAIS */
+
+.nvoip_callme_modal h4 {
+  font-size: 1.3em;
+}
+
+
+.nvoip_callme_modal h5 {
+  margin: 25px 0px 37px 0px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.nvoip_callme_modal p {
+  color: darkgray;
+  font-weight: bold;
+  display: block;
+  content: normal;
+}
+
+.nvoip_callme_modal input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.nvoip_callme_input {
+  background-repeat: no-repeat;
+  width: 490px;
+  height: 54px;
+  border-radius: 5px;
+  background-position: 10px center;
+  border: 2px solid lightgray;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  
+  
+}
+
+.iti{
+  display: flex !important; 
+  justify-content: center;
+
+  width: 86.4%;
+  margin: 0 auto;
+  
+
+  
+}
+.iti__flag-container{
+  left: 0;
+
+}
+
+.nvoip_callme_input:focus {
+  outline-color: var(--nvoip_callmeColorInputFocus);
+  border-color: var(--nvoip_callmeColorInputFocus);
+  box-shadow: none;
+}
+
+.nvoip_callme_svg {
+  width: 24px;
+  height: 24px;
+  
+}
+
+#nvoip_callme_btn-message-screen{
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+.nvoip_callme_logo {
+  width: auto;
+  max-width: 15rem;
+  max-height: 8rem;
+  text-align: center;
+}
+
+
+.nvoip_callme_btn-modal {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  padding: 15px 82px;
+  /* text-decoration: none;
+  display: inline-block; */
+  font-size: 16px;
+  line-height: 25px;
+  
+
+}
+
+.nvoip_callme_btn-modal.nvoip_callme_call-btn{
+  position: absolute;
+  bottom: -5%;
+  right: 29.8%;
+}
+
+.nvoip_callme_invisible{
+  display: none;
+}
+
+.nvoip_callme_first-page{
+  position: relative;
+}
+
+
+.nvoip_callme_call-btn {
+  background-color: var(--nvoip_callmeColorCallButton);
+}
+
+.nvoip_callme_sms-btn{
+  background-color: var(--nvoip_callmeColorSmsButton);
+}
+
+.nvoip_callme_call-btn:hover{
+  background-color: var(--nvoip_callmeColorHoverAllButtons);
+}
+
+.nvoip_callme_sms-btn:hover{
+  background-color: var(--nvoip_callmeColorHoverAllButtons);
+}
+
+
+/* BOTÃO PULSANTE */
+
+.nvoip_callme_right-to-left .nvoip_callme_btn-popover {
+  border: 4px var(--nvoip_callmecolorButton);
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  font-weight: bolder;
+  text-align: center;
+  font-size: xx-large;
+  background-color: var(--nvoip_callmecolorButton);
+}
+
+.nvoip_callme_btn-pulse {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  margin: 10px;
+  height: 20px;
+  width: 20px;
+  transform: scale(1);
+  animation: nvoip_callme_pulse-nvoip 3s infinite;
+}
+
+/* MODAL GERAL */
+.nvoip_callme_modal {
+  text-align: center;
+  
+}
+
+.nvoip_callme_modal-dialog {
+  display: flex;
+  width: 700px;
+  vertical-align: middle;
+}
+
+
+.nvoip_callme_modal-content {
+  border-radius: 15px;
+  height: 550px;
+}
+
+
+/* BOTÃO FECHAR */
+
+.nvoip_callme_div-btn-close {
+  margin-top: 1%;
+  margin-left: 95.7%;
+  width: 24px;
+}
+
+.nvoip_callme_btn-close {
+  background: transparent
+  center/1em auto no-repeat;
+  opacity: 0.75;
+  fill: var(--nvoip_callmeColorCloseButton);
+}
+
+.nvoip_callme_btn-close:hover {
+  text-decoration: none;
+  fill: var(--nvoip_callmeColorHoverCloseButton);
+}
+
+.nvoip_callme_btn-close:focus {
+  box-shadow: none;
+}
+
+
+/* HEADER PRINCIPAL */
+
+.nvoip_callme_modal-header {
+  margin-top: -2%;
+  padding: 0px 16px;
+}
+
+.nvoip_callme_modal-title {
+  /* width: 60%;
+  margin: 0px 25%;
+  padding-left: 5.2%;
+  text-align: center;
+   */
+   display: flex;
+   width: 100%;
+   justify-content: center;
+}
+
+.nvoip_callme_modal-title button:disabled svg,
+.nvoip_callme_modal-title button:disabled span {
+  fill: var(--nvoip_callmeColorEnabledButton);
+  color: var(--nvoip_callmeColorEnabledButton);
+  font-style: oblique;
+}
+
+.nvoip_callme_modal-title button svg,
+.nvoip_callme_modal-title button span {
+  fill: var(--nvoip_callmeColorDisabledButton);
+  color: var(--nvoip_callmeColorDisabledButton);
+}
+
+.nvoip_callme_header_call, .nvoip_callme_header_message {
+  display: flex;
+  /* width: 50%; */
+  /* float: left; */
+}
+
+.nvoip_callme_header_call svg {
+  margin-top: -25px;
+}
+
+.nvoip_callme_header_call span {
+  margin-top: 3px;
+}
+
+.nvoip_callme_header_message svg {
+  width: 37px;
+  height: 42px;
+}
+
+.nvoip_callme_header_message button {
+  text-align: center;
+  margin: 0px auto;
+  float: left;
+}
+
+.nvoip_callme_btn-svg {
+  border: none;
+  background: none;
+  width: 100%;
+}
+
+.nvoip_callme_btn-svg span {
+  font-size: 14px;
+  display: block;
+}
+
+.nvoip_callme_header-vertical-line::after {
+  content: "";
+  display: block;
+  background: #dee2e6;
+  height: 75px;
+  width: 1px;
+  margin: 3px 18px 0px 18px;
+}
+
+/* ME LIGUE AGORA */
+
+.nvoip_callme_modal-body.nvoip_callme_div-call {
+  padding: 30px 0px;
+  padding-bottom: 0px;
+  
+}
+
+.nvoip_callme_main-text-call {
+  color: var(--nvoip_callmeColorMainTextCall);
+  
+  
+}
+
+.nvoip_callme_main-text-sms {
+  color: var(--nvoip_callmeColorMainTextSms);
+  
+}
+
+.nvoip_callme_div-input {
+  margin: 0px 10%;
+
+  
+}
+
+
+/* .nvoip_callme_div-input form .nvoip_callme_input {
+  display: inline;
+} */
+
+.nvoip_callme_div-input textarea::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--nvoip_callmeColorBgScrollBarTA);
+}
+
+.nvoip_callme_div-input textarea::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  
+  background-color: var(--nvoip_callmeColorScrollBarTA);
+}
+
+
+/* DEIXE UMA MENSAGEM */
+
+.nvoip_callme_view-msg .nvoip_callme_div-input textarea,
+.nvoip_callme_view-msg .nvoip_callme_div-input input {
+  width: 100%;
+}
+
+.nvoip_callme_div-input textarea:first-of-type {
+  height: 185px;
+  resize: none;
+}
+
+.nvoip_callme_div-input .nvoip_callme_div-message-fields:first-of-type {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.nvoip_callme_div-message-fields {
+  float: left;
+  width: 269px;
+  display: block;
+}
+
+.nvoip_callme_div-message-fields input {
+  margin-bottom: 10px;
+}
+
+.nvoip_callme_scroller {
+  width: 300px;
+  height: 100px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+#nvoip_callme_count {
+  color: #8a8a8a;
+  float: left;
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+/* Mensagem de erro */
+
+.nvoip_callme_div-error-message p{
+  font-size: 16px;
+  color: red;
+  font-weight: normal;
+}
+
+#nvoip_callme_div-error-message {
+  visibility: hidden;
+  display: none;
+}
+
+/* FLUXO DE TELAS LIGAÇÃO */
+
+.nvoip_callme_flux h1 {
+  padding: 15px;
+  text-align: center;
+}
+
+.nvoip_callme_img_message{
+  margin-bottom: 12px;
+  margin-top: -6px
+}
+
+.nvoip_callme_flux .nvoip_callme_success-title{
+  color: var(--nvoip_callmeSuccessPageColorTitle);
+  margin-bottom: 5%;
+}
+
+.nvoip_callme_flux h4 {
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+.nvoip_callme_svg-check {
+  fill: #4cf55b;
+  width: 64px;
+  height: 54px;
+  margin-top: -3%;
+}
+
+.nvoip_callme_flux-incall {
+  padding: 50px 16px;
+  padding-bottom: 20px;
+}
+
+.nvoip_callme_flux-incall .nvoip_callme_text-loading{
+  color: var(--nvoip_callmeColorTextLoading);
+  font-size: 28px;
+}
+
+.nvoip_callme_flux .nvoip_callme_flux-incall h1 {
+  padding: 15px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: -60px;
+  font-size: 48px;
+}
+
+.nvoip_callme_flux .nvoip_callme_loading {
+  padding: 15px;
+  text-align: center;
+  color: var(--nvoip_callmeColorLoading);
+  font-weight: 400;
+  font-size: 50px;
+  margin: 0px;
+}
+.nvoip_callme_flux .nvoip_callme_loading:after {
+  overflow: hidden;
+  display: inline-block;
+  /* margin-top: 10%;  */
+
+  vertical-align: bottom;
+  -webkit-animation: nvoip_callme_ellipsis steps(5, end) 900ms infinite;
+  animation: nvoip_callme_ellipsis steps(5, end) 900ms infinite;
+  content: "\2026";
+  width: 0px;
+}
+
+
+.nvoip_callme_flux .nvoip_callme_svg-failed {
+  fill: red;
+  vertical-align: auto;
+  margin-top: 1.5%;
+  margin-bottom: 13px;
+  width: 64px;
+  height: 54px;
+}
+
+.nvoip_callme_flux-error {
+  padding: 50px 16px;
+  padding-bottom: 20px;
+}
+
+.nvoip_callme_flux .flux-error h1 {
+  padding: 15px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: -60px;
+  font-size: 48px;
+}
+
+/* VOLTAR */
+
+.nvoip_callme_btn-back {
+  justify-content: center;
+  border: none;
+  background-color: var(--nvoip_callmeReturnButton);
+  height: 55px;
+  width: 273px;
+  font-size: 16px;
+  line-height: 25px;
+  display: inline-block;
+  font-weight: 600;
+  color: white;
+  border-radius: 5px;
+  margin-top: 14%;
+  
+
+  
+    
+}
+
+.nvoip_callme_scheduled-img{
+    width: 64px;
+    height: 54px;    
+    margin-top: 5%;
+
+}
+
+.nvoip_callme_btn-back:hover {
+  background-color:var(--nvoip_callmeReturnButtonHover);
+  text-decoration: none;
+  
+}
+
+/* SUCESSO */
+
+#nvoip_callme_img_success{
+  margin-top: -2%;
+}
+
+.nvoip_callme_modal-call-success h4 {
+  line-height: 33px;
+  font-size: 20px;
+}
+
+.nvoip_callme_flux .nvoip_callme_sucess-text{
+  color: var(--nvoip_callmeSuccessPageColorMainText);
+  margin-top: 1%;
+  
+  
+}
+
+.nvoip_callme_div-message-success h2 {
+  margin-bottom: 5.5%;
+  
+
+}
+
+
+
+.nvoip_callme_message-success-title{
+  color: var(--nvoip_callmeColorTitleMessage)
+}
+
+.nvoip_callme_message-success-text{
+  color: var(--nvoip_callmeColorMainTextMessage);
+ 
+}
+
+/* FALHA CHAMADA */
+
+.nvoip_callme_flux .nvoip_callme_title-failed {
+  color: var(--nvoip_callmeColorTitleFailed);
+  margin-bottom: 3.5%;
+}
+
+
+
+.nvoip_callme_flux .nvoip_callme_main-text-failed {
+  color: var(--nvoip_callmeColorMainTextFailed);
+  margin-top: 0.5%;
+  
+}
+
+/* FOOTER */
+
+.nvoip_callme_modal-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nvoip_callme_modal-footer p {
+  position: sticky;
+  font-weight: 300;
+  margin-left: 5px;
+  margin-top: -5px;
+}
+
+.nvoip_callme_modal-content .nvoip_callme_modal-footer {
+  display: block;
+}
+
+.nvoip_callme_footer-href {
+  text-decoration: none;
+  color: var(--nvoip_callmeColorHrefFooter);
+}
+
+.nvoip_callme_footer-href:hover {
+  color: var(--nvoip_callmeColorHoverHrefFooter);
+}
+
+
+
+/* RESPONSIVO */
+
+/* ALINHANDO O MODAL AO MEIO */
+
+
+/* ESTILO PARA TABLETS */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  /* TELA PRINCIPAL */
+  .nvoip_callme_modal-content .nvoip_callme_modal-title {
+      width: 688px;
+      margin: 0px 15%;
+  }
+
+  .nvoip_callme_div-btn-close {
+      margin-top: 1.5%;
+      margin-left: 93.8%;
+  }
+
+  .nvoip_callme_flux .nvoip_callme_success-title{
+    color: var(--nvoip_callmeSuccessPageColorTitle);
+    margin-bottom: 7.5%;
+  }
+
+  .nvoip_callme_flux .nvoip_callme_title-failed{
+    color: var(--nvoip_callmeSuccessPageColorTitle);
+    margin-bottom: 8%;
+  }
+
+  .nvoip_callme_sucess-div{
+    color: var(--nvoip_callmeSuccessPageColorMainText);
+    display: inline-block;
+    margin-top: 300px;
+ 
+    
+  }
+
+  .nvoip_callme_modal-content {
+    border-radius: 15px;
+    height: 750px;
+  }
+  
+
+  /* ME LIGUE AGORA */
+
+  .nvoip_callme_call-btn {
+    left: 22.5%;
+}
+
+
+  .nvoip_callme_div-input-call {
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  /* DEIXE UMA MENSAGEM */
+
+  .nvoip_callme_div-input-msg {
+      margin: 0 auto;
+      width: 54%;
+  }
+
+  .nvoip_callme_message-success-text{
+    color: var(--nvoip_callmeColorMainTextMessage);
+
+  }
+
+  .nvoip_callme_message-success-title{
+    color: var(--nvoip_callmeColorTitleMessage)
+  }
+
+  .nvoip_callme_div-message-fields{
+      display: inline-block;
+  }
+
+  .nvoip_callme_call-btn {
+    bottom: 0;
+  }
+
+  .nvoip_callme_div-input .nvoip_callme_div-message-fields:first-of-type{
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 10px;
+  }
+
+  #date, #time {
+    width: 100% !important; 
+    margin-top: 10px;
+  }
+
+  .nvoip_callmeDate, .nvoip_callmeTime{
+    width: 100% ; 
+  }
+
+  .nvoip_callmeDateTime{
+    margin: 0px !important;
+  }
+
+} 
+
+/* ESTILO PARA SMARTPHONES */
+@media only screen and (max-width: 767px) {
+
+  .nvoip_callme_modal {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nvoip_callme_modal-footer {
+    margin-top: 100px !important; 
+  }
+
+  .nvoip_callme_call-btn {
+    margin-top: 20px;
+  }
+
+  /* LARGURA DO MODAL */
+
+  .nvoip_callme_modal-dialog {
+    margin: 0%;
+    width: 100%;
+  }
+  
+  .modal-backdrop {
+    background-color: white;
+ }
+
+  .nvoip_callme_modal-content {
+    height: 100%;
+    border-radius: 0px;
+  }
+
+  /* TELA PRINCIPAL */
+
+  .nvoip_callme_div-btn-close{
+      margin-top: 1.5%;
+      margin-left: 90.9%;
+  }
+
+  .nvoip_callme_logo {
+      max-width: 60%;
+  }
+
+  .nvoip_callme_modal-title {
+      width: 100%;
+      margin: 0px;
+      padding-bottom: 5px;
+  }
+
+  .nvoip_callme_header_call{
+      width: 54.2%;
+      margin: auto;
+  }
+
+  .nvoip_callme_header_call button {
+      width: 80%;
+  }
+
+  .nvoip_callme_header_message{
+      width: 43.8%;
+  }
+  /* #nvoip_callme_btn-message-screen{
+      margin-bottom:10%;
+  } */
+  /* DEIXE UMA MENSAGEM E ME LIGUE AGORA */
+
+  .nvoip_callme_btn-modal.nvoip_callme_call-btn{
+    position:inherit;
+    width: calc(100% - 40px);
+    padding: 15px 0;
+    text-align: center;
+    
+  }
+
+ .modal-dialog{
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+  .nvoip_callme_flux .nvoip_callme_success-title{
+    color: var(--nvoip_callmeSuccessPageColorTitle);
+    margin-bottom: 10%;
+  }
+  
+  .nvoip_callme_flux .nvoip_callme_title-failed{
+    color: var(--nvoip_callmeSuccessPageColorTitle);
+    margin-bottom: 8%;
+  }
+
+  .nvoip_callme_flux .nvoip_callme_sucess-text{
+    color: var(--nvoip_callmeSuccessPageColorMainText);
+    margin-top: 4.5%;
+    
+  }
+
+  .nvoip_callme_view-call, .nvoip_callme_view-msg {
+    padding-bottom: 2px;
+  }
+
+  .nvoip_callme_view-call h5, .nvoip_callme_view-msg h5{
+      font-size: 1.15rem;
+  }
+
+  /* ME LIGUE AGORA */
+
+  .nvoip_callme_view-call input {
+      width: 100%;
+  }
+
+  .nvoip_callme_modal-footer {
+      margin-top: 0px;
+      
+  }
+
+  .nvoip_callme_view-call input:first-of-type{
+      margin-bottom: 10px;
+  }
+
+  #date, #time {
+    width: 100% !important; 
+    margin-top: 10px;
+  }
+
+  .nvoip_callmeDate, .nvoip_callmeTime{
+    width: 100% ; 
+  }
+
+  .nvoip_callmeDateTime{
+    margin: 0px !important;
+  }
+  
+  /* DEIXE UMA MENSAGEM */
+
+  .nvoip_callme_div-input .nvoip_callme_div-message-fields:first-of-type{
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-bottom: 10px;
+  }
+
+
+  .nvoip_callme_div-message-fields {
+      width: 100%;
+  }
+
+  /* FLUXO */
+
+  .nvoip_callme_flux .nvoip_callme_logo{
+      max-width: 60%;
+  }
+
+  .nvoip_callme_flux .nvoip_callme_flux-incall h1 {
+      font-size: 36px;
+  }
+
+}
+
+.content_margin_bottom {
+  margin-bottom: 22%;
+}
+
+/* .nvoip_callme_flux {
+  margin-bottom: 20%;
+} */
+
+.modal-footer {
+
+  margin-top:auto; 
+  
+
+}
+
+
+
+#date:focus{
+
+  border:solid 1px #f37435;
+  
+}
+
+
+.nvoip_callme_loading_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+ /* INPUT TIME  */
+
+ input[type=time] {
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border:solid 2px lightgrey;
+  width: 22%;
+  height: 30px;
+}
+
+input:focus {
+	outline: none;
+  border: 1px solid #f37435;
+}
+
+/* Wrapper around the hour, minute, second, and am/pm fields as well as 
+the up and down buttons and the 'X' button */
+input[type=time]::-webkit-datetime-edit-fields-wrapper {
+  display: flex;
+  
+}
+
+/* The space between the fields - between hour and minute, the minute and 
+second, second and am/pm */
+input[type=time]::-webkit-datetime-edit-text {
+  padding: 19px 4px;
+  
+}
+
+/* The naming convention for the hour, minute, second, and am/pm field is
+`-webkit-datetime-edit-{field}-field` */
+
+/* Hour */
+input[type=time]::-webkit-datetime-edit-hour-field {
+
+  border-radius: 15%;
+  padding: 19px 13px;
+  
+}
+
+/* Minute */
+input[type=time]::-webkit-datetime-edit-minute-field {
+  
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+
+/* AM/PM */
+input[type=time]::-webkit-datetime-edit-ampm-field {
+  background-color: black;
+  border-radius: 15%;
+  color: black;
+  padding: 19px 13px;
+  
+}
+
+
+.nvoip_callmeDateTime{
+  border: 2px solid #fff;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0  6.5%;
+  margin-top: 10px;
+
+
+  /* display: inline-block; */
+}
+
+#time{
+  width:200px;
+  height: 54px;
+  border-radius: 5px;
+  display: block !important;
+  
+}
+
+#date{
+  width:267px;
+  height: 54px;
+  border-radius: 5px;
+  border:solid 2px lightgrey;
+  padding: 10px;
+  display: block !important;
+
+
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.nvoip_callme_modal-content{
+  border: none;
+}
+
+.nvoip_callme_form-call{
+  height: 100%;
+  position: relative;
+}
+
+.nvoip_callme_div-input, .nvoip_callme_modal-body{
+  height: 100%;
+}
+
+.modal-dialog{
+  max-width: 100%;
+}
